@@ -438,6 +438,7 @@ li {
 }
 .standoutContainer{
     grid-gap: 1rem;
+    white-space: break-spaces;
 }
 .curve-line{
     display:none;
