@@ -1,96 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VariableBot</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/Group 82.png">
+
+    <!-- Icon Library (OpenSource - Feather) -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <!-- LotteFiles Free to Use Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+
+
+</head>
+<body>
+    <div style="position: fixed; width: 100%; user-select: none; height: 100%; z-index: -1;" id="particles-js"></div>
+
+    <!-- Designing Navbar -->
+    <div id="navbar">
+        <!-- Navbar - Logo -->
+        <div id="navbarLogo">
+            <img src="assets/Group 83.png"/>
+            <h1>VariableBot</h1>
+        </div>
+        <!-- Navbar - Links -->
+        <div id="navbarLinks">
+            <p>Home</p>
+            <p>About</p>
+            <p>Pricing</p>
+            <p>Contact</p>
+            <p>Blog</p>
+        </div>
+        <!-- Navbar Socials -->
+        <div id="navbarSocials">
+            <!-- <i data-feather="facebook"></i> -->
+            <i data-feather="youtube"></i>
+            <i data-feather="twitter"></i>
+            <i data-feather="instagram"></i>
+        </div>
+    </div>
+
+    <!-- Home Container -->
+    <div id="containerHome">
+        <div style="z-index:2">
+            <h1>Navigate the Future of Crypto  </h1>
+            <h1>with <span class="glowText">VariableBot </span> - Your Gateway to Smart Trading!</h1>
+            <p>Your mate for perpetual trading making sure that you make the most out of every trade</p>
+            <p id="waitlist">Join Waitlist</p>
+
+        </div>
+        <div id="assetLogo"><img  style='position: relative;opacity:0.5' src="assets/Group 81.png" /></div>
+        <!-- <img src="assets/mobilePhone.png"/> -->
+
+        <!-- Wave Line Animated -->
+        <svg class="curve-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+            <path d="M0,224L60,186.7C120,149,240,75,360,69.3C480,64,600,128,720,154.7C840,181,960,171,1080,149.3C1200,128,1320,96,1380,80L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+        </svg>
+
+    </div>
+    <!-- About -->
+    <div id="containerAbout">
+        <div style="display:flex;width:90%;justify-content: space-around;">
+            <div id="lottie-blockchain" style="height:100%"></div>
+            <div>
+                <h1>ABOUT</h1>
+                <p style="    font-size: 1.2rem;color: #9aede6;">VariableBot redefines your crpytocurrency trading with a blend of innovative strategies and cutting-edge technology. We're committed to providing an inclusive, all-encompassing digital trading platform that's ahead of the curve.</p>
+
+            </div>
+        </div>
+        <!-- Features -->
+        <h1 style="margin-top: 2rem;">VariableBot Features</h1>
+
+        <div class="featuresContainer">
+        
+            <div class="featuresCard" style='background: linear-gradient(45deg, #a9ff0070, #ffffff2b);'>
+                <i data-feather="command"></i>
+                <h2>Multi-Chain</h1>
+                <p>Harness the power of various blockchains for a versatile trading experience</p>
+            </div>
+            <div class="featuresCard" style='background: linear-gradient(45deg, #ffb50070, #ffffff2b);'>
+                <i data-feather="crosshair"></i>
+                <h2>Sniper Bot</h1>
+                <p>Capitalize on opportunities with pinpoint accuracy and speed.</p>
+            </div>
+            <div class="featuresCard" style='background: linear-gradient(45deg, #ff310070, #ffffff2b);'>
+                <i data-feather="trending-up"></i>
+                <h2>Perpetual Trading</h1>
+                <p>Trade continuously, never missing a beat in the 24/7 crypto market.</p>
+            </div>
+            <div class="featuresCard" style="background: linear-gradient(45deg, #00ff6870, #ffffff2b);">
+                <i data-feather="dollar-sign"></i>
+                <h2>Referral</h1>
+                <p>Grow with us and reap rewards by introducing others to VariableBot</p>
+            </div>
+            <div class="featuresCard" style="background: linear-gradient(45deg, #a9ff0070, #ffffff2b);">
+                <i data-feather="check-circle"></i>
+                <h2>Gasless</h1>
+                <p>Experience seamless transactions without the burden of gas fees.</p>
+            </div>
+            <div class="featuresCard" style="background: linear-gradient(45deg, #00ff4c70, #ffffff2b);">
+                <i data-feather="cloud-lightning"></i>
+                <h2>Airdrop Farming</h1>
+                <p>Cultivate your assets with strategic airdrop harvesting.</p>
+            </div>
+        </div>
+
+        <!-- Stands out -->
+        <h1 style="margin-top: 2rem;">Why VariableBot Stands Out?</h1>
+        <div class='standoutContainer'>
+            <div class="standoutCard">
+                <div class="standoutCircle">1</div>
+                <h2>Multi-Platform Integration</h2>
+                <p>Trade across multiple platforms with a unified interface from VariableBot directly from Telegram.</p>
+            </div>
+            <div class="standoutCard">
+                <div class="standoutCircle">2</div> 
+                <h2>Intuitive User Experience</h2>
+                <p>Navigate with ease using our user-friendly interface, designed for both novices and experts.</p>
+            </div>
+            <div class="standoutCard">
+                <div class="standoutCircle">3</div>
+                <h2>Fortified Security Measures</h2>
+                <p>Your account and assets are shielded with state-of-the-art security protocols.</p>
+            </div>
+            <div class="standoutCard">
+                <div class="standoutCircle">4</div>
+                <h2>Omnichannel Support</h2>
+                <p>Receive assistance wherever you trade with our omnipresent customer service.</p>
+            </div>
+            <div class="standoutCard">
+                <div class="standoutCircle">5</div>
+                <h2>Advanced Execution Algorithms</h2>
+                <p>Stay ahead of the market with our superior execution technology.</p>
+            </div>
+            <div class="standoutCard">
+                <div class="standoutCircle">6</div>
+                <h2>Streamlined Gasless Transactions with Arcana</h2>
+                <p>Enjoy a holistic trading experience with simplified, streamlined gasless processes for all your transactions.</p>
+            </div>
+        </div>
+
+        <!-- RoadMap -->
+        <div style="display:flex;width:90%;justify-content: space-around;">
+            <div id="lottie-earth" style="height: 100%; width: 22%; filter: invert(1); display: flex; justify-content: center; align-items: center;"></div>
+            <div>
+                <h1>RoadMap</h1>
+
+                <h2 class="glowText">◯ Phase 1</h2>
+                <p> 〣 MVP Launch: Initial release of our Minimum Viable Product to set the stage for innovation.</p>
+                <p> 〣 V1 Launch: Introduction of our first full-feature version.</p>
+                <p> 〣 $VAR Launch: Debut of our native token, $VAR, as the new currency of trading.</p>
+
+                <h2 class="glowText">◯ Phase 2</h2>
+                <p> 〣 V2 Launch: Unveiling the second iteration with enhanced features."</p>
+                <p> 〣 Rewards for Holders: Loyal users will receive incentives as a thank you for their commitment.</p>
+                <p> 〣 Staking: Lock in your $VAR and earn rewards over time."</p>
+                <p> 〣 Var Frens (DAO): Join the VariableBot community governance and help steer our course.</p>
+                <p> 〣 AI Trading Strategies: Leverage artificial intelligence for smarter trading decisions.</p>
+                <p> 〣 Meme Generator: Add a touch of humor to trading with our custom meme creation tool.</p>
+
+            </div>
+        </div>
+        <!-- FAQ -->
+        <h1 style="margin-top: 2rem;">FAQ</h1>
+
+
+        <div class="faqContainer">
+            <h2>What is VariableBot?</h2>
+            <p>VariableBot is a state-of-the-art perpetual trading platform utilizing advanced algorithms to optimize your cryptocurrency trading.</p>
+        </div>
+
+        <div class="faqContainer">
+            <h2>How can I benefit from the Referral Program?</h2>
+            <p>Invite friends to VariableBot and earn rewards as they trade, creating a win-win for everyone.</p>
+        </div>
+
+        <div class="faqContainer">
+            <h2>What sets VariableBot apart from the competition?</h2>
+            <p>Our innovative multi-chain support, sniper precision, and commitment to gasless transactions define our unique edge.</p>
+        </div>
+
+        <div class="faqContainer">
+            <h2>How does VariableBot protect my investments?</h2>
+            <p>We employ robust security measures including encryption and two-factor authentication to safeguard your assets.</p>
+        </div>
+
+        <div class="faqContainer">
+            <h2>Can I trade on multiple blockchains with VariableBot?</h2>
+            <p>Absolutely, our platform is designed for multi-chain functionality, allowing you to trade across different blockchains seamlessly.</p>
+        </div>
+
+        <div class="faqContainer">
+            <h2>How does VariableBot streamline the trading experience?</h2>
+            <p>VariableBot offers a seamless trading experience with features like one-click trading, real-time analytics, and automated strategies to enhance efficiency and minimize effort for traders of all levels.</p>
+        </div>
+
+        <footer>
+            <div class="column">
+                <h3>VariableBot</h3>
+                <p>VariableBot is a state-of-the-art perpetual trading platform utilizing advanced algorithms to optimize your cryptocurrency trading</p>
+            </div>
+
+            <div class="column">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">Discord</a></li>
+                    <li><a href="#">Medium</a></li>
+                </ul>
+            </div>
+
+            <div class="column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Research</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+</body>
 </html>

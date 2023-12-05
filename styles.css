@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+
+
+@font-face{
+	font-family:'Custom1';
+	src: url(assets/Covid19.ttf);
+}
+body{
+	font-family: 'Poppins';
+	margin: 0;
+	padding: 0;
+	overflow-X:hidden;
+	background-color: #1E0155;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #26015887;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+.feather {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke: currentColor;
+    stroke-width: 1.8px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+.featuresContainer .feather {
+    width: 5rem;
+    height: 5rem;
+    stroke: white;
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    z-index: 3;
+    position: fixed;
+    border-radius: 1rem;
+    font-size: 0.4rem;
+    width: 98%;
+    margin: 1%;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: white;
+    justify-content: space-around;
+    background: linear-gradient(45deg, #26015887, #3f015887);
+    backdrop-filter: blur(2rem);
+}
+#navbarLogo{
+    width: 20%;
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: space-around;
+}
+#navbarLogo img{
+    height: 6vh;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+}
+
+#navbarLogo h1{
+	margin:0;
+}
+#navbarLinks{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 800;
+    justify-content: space-around;
+}
+#navbarLinks p{
+	opacity:0.7;
+	transition: 0.2s ease;
+}
+#navbarLinks p:hover{
+	opacity:1;
+	cursor: pointer	;
+	color: mediumpurple;
+	font-size:1.4rem;
+}
+
+#navbarSocials{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    justify-content: space-around;	
+}
+
+
+#containerHome{
+    overflow: hidden;
+    background: linear-gradient(45deg,#3d016a70, #5203bfde);
+    height: 90vh;
+    display: flex;
+    padding: 0 10%;
+    width:90%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#containerHome h1{
+    color: white;
+    font-weight: 400;
+    margin: 0;
+    width: 100%;
+    font-size: 3.5rem;
+    width:80%;
+    font-family: 'Custom1';
+    line-height: 1.1;
+
+}
+#containerHome img{
+    height: 60%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+#containerHome p{
+    width: 80%;
+    font-size: 1.3rem;
+    color: #f9cafe;
+    white-space: break-spaces;
+}
+
+#containerAbout{
+    background: #1e0155ab;
+    padding: 1%;
+    display: flex;
+    color: white;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+#containerAbout h1{
+    font-family: 'poppins';
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 0 0 6rem white;
+}
+
+.featuresContainer{
+    display: grid;
+    width: 90%;
+    grid-gap: 5%;
+    margin: 2rem 0;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+}
+.featuresCard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.1);
+    font-size: 1rem;
+    width: 100%;
+    background: linear-gradient(45deg, #00d5d51f, #e3b5f500);
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    transition: 0.2s ease;
+}
+
+.featuresCard:hover {
+    transform: scale(1.06);
+    filter: brightness(0.5);
+}
+
+
+.featuresCard h2,p{
+	margin:0;
+
+}
+
+.standoutCard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 0;
+    transition: 0.2s ease;
+}
+
+.standoutCard h2,p{
+	margin:0;
+
+}
+.standoutCircle{
+    background: linear-gradient(45deg, #5b19a2, #720293);
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 2rem;s
+}
+
+.standoutContainer{
+    display: grid;
+    width: 86%;
+    grid-gap: 5%;
+    padding: 5% 2%;
+    height: fit-content;
+    margin: 2rem 0;
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    background: linear-gradient(165deg, #bd35dc3b, #d743d445);
+    border-radius: 2rem;
+    box-shadow: 0 0 9rem #72029387;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.faqContainer{
+    border: 1px solid rgba(255,255,255,0.09);
+    text-align: center;
+    padding: 1%  2%;
+    width: 78%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 1rem;
+/*    backdrop-filter: blur(4px);*/
+    transition:0.4s ease;
+    margin-bottom: 1rem;
+}
+.faqContainer:hover p{
+	display:block;
+
+}
+.faqContainer p{
+	font-size:1.2rem;
+	display:none;
+}
+
+.faqContainer:hover{
+	transform:scale(1.05);
+    background: rgba(255,255,255,0.2);
+
+}
+#waitlist{
+    font-family: monospace;
+    background: #ffffff14;
+    width: fit-content !important;
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 1% 2%;
+    margin-top:1rem;
+    border-radius: 0.3rem;
+    font-size: 1.6rem;
+    transition:0.2s ease;
+}
+#waitlist:hover{
+	transform:scale(1.10);
+	cursor:pointer;
+    background: #ffffff24;
+
+
+}
+
+footer {
+	margin-top:2rem;
+    background-color: transparent;
+    width: 93%;
+    opacity:0.7;
+    border-top: 1px solid #5b19a2;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.column {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+#assetLogo{
+    text-align: center;
+    background: linear-gradient(45deg, #ffffff33, #d244de0a);
+    position: absolute;
+    right: 5%;
+    box-shadow: -2rem -2rem 8rem #d4d4d485;
+    border-radius: 1rem;
+    width: 20%;
+    aspect-ratio: 1/1;
+    display: flex;
+    rotate: 6deg;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.06);
+    align-items: center;
+    backdrop-filter: blur(0.1rem);
+    animation:10s movingSlow infinite linear ;
+}
+
+
+
+
+@keyframes movingSlow {
+    0% {
+        rotate: -20deg;
+        translate: 0 -10%;
+    }
+
+    50% {
+        rotate: 20deg;
+        translate: 0;
+    }
+    100%{
+    	rotate:-20deg;
+    	translate: 0 -10% ;
+    }
+}
+
+
+
+.curve-line{
+    position: absolute;
+    left: -5%;
+    top: 60vh;
+    width: 110%;
+    fill: #1e0155;
+    height:45%;
+    animation: curvelineanimation 10s ease-in-out infinite alternate;
+}
+
+@keyframes curvelineanimation {
+    0% {
+        width: 110%;
+    }
+
+    50% {
+        width: 130%;
+    }
+    100%{
+    	width:110%;
+    }
+}
+
+.glowText{
+    background: linear-gradient(to right, #7953cd 20%, #00affa 30%, #0190cd 70%, #764ada 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 2s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+@media (max-width:960px){
+#navbarLinks{
+	display:none;
+}
+
+#navbarSocials{
+	width:30%;
+}
+
+#containerHome h1{
+    font-size: 2.5rem;
+
+}
+
+#containerAbout h1{
+	font-size:2rem;
+}
+
+.featuresContainer{
+    width: 80%;
+    grid-gap: 1rem;
+}
+.standoutContainer{
+    grid-gap: 1rem;
+}
+.curve-line{
+	animation:none;
+}
+.feather {
+    width: 2rem;
+    height: 2rem;
+    stroke: currentColor;
+    stroke-width: 1.8px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+}
