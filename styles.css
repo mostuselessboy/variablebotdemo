@@ -412,6 +412,13 @@ li {
     width:60%;
 }
 
+#navbar{
+    backdrop-filter:blur(5px);
+}
+#assetLogo{
+    width:40%;
+    animation:none;
+}
 #containerHome h1{
     font-size: 2.5rem;
 
