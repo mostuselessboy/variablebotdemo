@@ -27,18 +27,18 @@
         </div>
         <!-- Navbar - Links -->
         <div id="navbarLinks">
-            <p>Home</p>
-            <p>About</p>
-            <p>Pricing</p>
-            <p>Contact</p>
-            <p>Blog</p>
+            <a href="#containerHome"><p>Home</p></a>
+            <a href="#about"><p>About</p></a>
+            <a href="#roadmap"><p>Roadmap</p></a>
+            <a href="#Features"><p>Features</p></a>
+            <a href="#faq"><p>FAQ</p></a>
         </div>
         <!-- Navbar Socials -->
         <div id="navbarSocials">
             <!-- <i data-feather="facebook"></i> -->
-            <i data-feather="youtube"></i>
-            <i data-feather="twitter"></i>
-            <i data-feather="instagram"></i>
+            <!-- <i data-feather="youtube"></i> -->
+            <!-- <i data-feather="twitter"></i> -->
+            <!-- <i data-feather="instagram"></i> -->
         </div>
     </div>
 
@@ -65,7 +65,7 @@
         <div style="display:flex;width:90%;justify-content: space-around;">
             <div id="lottie-blockchain" style="height:100%"></div>
             <div>
-                <h1>ABOUT</h1>
+                <h1 id="about">ABOUT</h1>
                 <p style="    font-size: 1.2rem;">VariableBot redefines your crpytocurrency trading with a blend of innovative strategies and cutting-edge technology. We're committed to providing an inclusive, all-encompassing digital trading platform that's ahead of the curve.</p>
 
             </div>
@@ -73,7 +73,7 @@
         <!-- Features -->
         <h1 style="margin-top: 2rem;">VariableBot Features</h1>
 
-        <div class="featuresContainer">
+        <div id="Features" class="featuresContainer">
         
             <div class="featuresCard" style='background: linear-gradient(45deg, #a9ff0070, #ffffff2b);'>
                 <i data-feather="command"></i>
@@ -146,7 +146,7 @@
         <div style="display:flex;width:90%;justify-content: space-around;">
             <div id="lottie-earth" style="height: 100%; width: 22%; filter: invert(1); display: flex; justify-content: center; align-items: center;"></div>
             <div>
-                <h1>RoadMap</h1>
+                <h1 id="roadmap">RoadMap</h1>
 
                 <h2 class="glowText">◯ Phase 1</h2>
                 <p> 〣 MVP Launch: Initial release of our Minimum Viable Product to set the stage for innovation.</p>
@@ -164,7 +164,7 @@
             </div>
         </div>
         <!-- FAQ -->
-        <h1 style="margin-top: 2rem;">FAQ</h1>
+        <h1 style="margin-top: 2rem;" id='faq'>FAQ</h1>
 
 
         <div class="faqContainer">
@@ -206,21 +206,17 @@
             <div class="column">
                 <h3>Community</h3>
                 <ul>
-                    <li><a href="#">Instagram</a></li>
                     <li><a href="#">Twitter</a></li>
                     <li><a href="#">Telegram</a></li>
-                    <li><a href="#">Discord</a></li>
-                    <li><a href="#">Medium</a></li>
                 </ul>
             </div>
 
             <div class="column">
                 <h3>Information</h3>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Research</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#">Whitepaper</a></li>
                 </ul>
             </div>
         </footer>
