@@ -441,4 +441,7 @@ li {
     stroke-linejoin: round;
     fill: none;
 }
+#particles-js{
+    display:none;
+}
 }
