@@ -7,19 +7,22 @@
 	font-family:'Custom1';
 	src: url(assets/Covid19.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
 	font-family: 'Poppins';
 	margin: 0;
 	padding: 0;
-    scroll-behavior: smooth;
 	overflow-X:hidden;
-	background-color: #1E0155;
+	background-color: #0c0c0c;
 }
 
 
 a {
     text-decoration: none;
     color: white;
+
 }
 
 ::-webkit-scrollbar {
@@ -29,8 +32,8 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #26015887;
-    border-radius: 1rem;
+    background-color: #b5b5b587;
+    border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -51,7 +54,7 @@ a {
     width: 5rem;
     height: 5rem;
     stroke: white;
-    stroke-width: 1.5px;
+    stroke-width: 1px;
     stroke-linecap: round;
     stroke-linejoin: round;
     fill: none;
@@ -71,7 +74,7 @@ a {
     border: 1px solid rgba(255,255,255,0.1);
     color: white;
     justify-content: space-around;
-    background: linear-gradient(45deg, #26015887, #3f015887);
+    background: linear-gradient(45deg, #00000082, #45454587);
     backdrop-filter: blur(2rem);
 }
 #navbarLogo{
@@ -82,9 +85,9 @@ a {
     justify-content: space-around;
 }
 #navbarLogo img{
-    height: 6vh;
+    height: 4vh;
     aspect-ratio: 1/1;
-    border-radius: 50%;
+    border-radius: 0;
     margin-right: 0.8rem;
 }
 
@@ -121,7 +124,7 @@ a {
 
 #containerHome{
     overflow: hidden;
-    background: linear-gradient(45deg,#3d016a70, #5203bfde);
+    background: linear-gradient(45deg,#08080870, #050505de);
     height: 90vh;
     display: flex;
     padding: 0 10%;
@@ -151,12 +154,12 @@ a {
 #containerHome p{
     width: 80%;
     font-size: 1.3rem;
-    color: #f9cafe;
+    color: #a3a3a3;
     white-space: break-spaces;
 }
 
 #containerAbout{
-    background: #1e0155ab;
+    background: #070707e0;
     padding: 1%;
     display: flex;
     color: white;
@@ -171,7 +174,7 @@ a {
     font-family: 'poppins';
     font-size: 3rem;
     margin: 0;
-    text-shadow: 0 0 6rem white;
+    text-shadow: 0 0 1rem #a1a1a166;
 }
 
 .featuresContainer{
@@ -188,8 +191,8 @@ a {
     border: 1px solid rgba(255,255,255,0.1);
     font-size: 1rem;
     width: 100%;
-    background: linear-gradient(45deg, #00d5d51f, #e3b5f500);
-    border-radius: 2rem;
+    background: rgba(255,255,255,0.02);
+    border-radius: 1rem;
     justify-content: center;
     align-items: center;
     padding: 3%;
@@ -225,12 +228,14 @@ a {
 
 }
 .standoutCircle{
-    background: linear-gradient(45deg, #5b19a2, #720293);
+    background: white;
     width: 3rem;
     height: 3rem;
     text-align: center;
     border-radius: 50%;
-    font-size: 2rem;s
+    font-size: 2rem;
+    color:black;
+    font-weight:bold;
 }
 
 .standoutContainer{
@@ -241,9 +246,9 @@ a {
     height: fit-content;
     margin: 2rem 0;
     grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
-    background: linear-gradient(165deg, #bd35dc3b, #d743d445);
+    background: #151515;
     border-radius: 2rem;
-    box-shadow: 0 0 9rem #72029387;
+    box-shadow: 0 0 9rem #00000087;
     border: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -293,11 +298,11 @@ a {
 }
 
 footer {
-	margin-top:2rem;
+    margin-top: 2rem;
     background-color: transparent;
     width: 93%;
-    opacity:0.7;
-    border-top: 1px solid #5b19a2;
+    opacity: 0.7;
+    border-top: 1px solid #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -361,7 +366,7 @@ li {
     left: -5%;
     top: 60vh;
     width: 110%;
-    fill: #1e0155;
+    fill: #070708;
     height:45%;
     animation: curvelineanimation 10s ease-in-out infinite alternate;
 }
@@ -380,7 +385,7 @@ li {
 }
 
 .glowText{
-    background: linear-gradient(to right, #7953cd 20%, #00affa 30%, #0190cd 70%, #764ada 80%);
+    background: linear-gradient(to right, #b8b8b8 20%, #898989 30%, #a6a6a6 70%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -414,11 +419,12 @@ li {
 }
 
 #navbar{
-    margin:0;
-    border-radius:0;
-    width:100%;
-    padding:0;
-    backdrop-filter:blur(5px);
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    border: none;
+    padding: 0;
+    backdrop-filter: BLUR(10PX);
 }
 #assetLogo{
     width:40%;
